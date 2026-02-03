@@ -7,7 +7,7 @@ class Employee(models.Model):
     Qualification=models.CharField(max_length=20)
     State=models.CharField(max_length=20)
     Email=models.EmailField()
-    Contact=models.IntegerField()
+    Contact=models.BigIntegerField()
     Password=models.CharField(max_length=30)
     Profile_picture=models.ImageField(upload_to='image')
     Music=models.FileField(upload_to='audio')
