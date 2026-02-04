@@ -13,5 +13,6 @@ class Employee(models.Model):
     Music=models.FileField(upload_to='audio')
     Video=models.FileField(upload_to='video')
     Resume=models.FileField(upload_to='doc')
-    
+    def __str__(self):
+        return str(self.Contact) + " "+ self.Name
 
